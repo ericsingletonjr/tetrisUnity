@@ -1,4 +1,4 @@
-# Tetris built in Unity - Quick DD
+# Tetris built in Unity - QDD
 
 This is for learning how to build the classic game Tetris within the Unity IDE. This is to help further solidify the understanding of things such as Prefabs as well as creating a grid that checks whether specific arrays have fully been met
 
@@ -24,3 +24,13 @@ The main objects will be shapes that are similar to alphabetical letters and are
 * I - shaped
 
 The highest obtainable multi-line clear will be four lines at once.
+
+### Board
+
+The gameplay will take place on a board that is the standard 10x24. This will be related to the size of the blocks that are creating the shapes and set to a tilemap as this will be in the 2D space.
+
+The state of the board will be checked for the following conditions:
+* Is a line full
+* How many lines cleared at once (up to 4)
+* AFTER being placed, does a block exceed the top threshold
+
